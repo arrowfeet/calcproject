@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <div id="calculator">
+    <div id="calculator" class="drag sticky">
       <textarea
         id="user-input"
         cols="30"
@@ -49,6 +49,20 @@
           <button class="operator" data="/">/</button>
         </div>
       </div>
+    </div>
+
+    <div id="stickies-container"></div>
+    <div class="sticky-form drag sticky">
+      <label for="stickytitle">Title</label>
+      <input type="text" name="stickytitle" id="stickytitle" />
+      <label for="stickytext">Text</label>
+      <textarea
+        name="stickytext"
+        id="stickytext"
+        cols="24"
+        rows="10"
+      ></textarea>
+      <button class="button" id="createsticky">Stick it!</button>
     </div>
   </body>
   <script src="./scripts.js"></script>
